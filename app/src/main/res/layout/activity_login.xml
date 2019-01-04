@@ -74,7 +74,7 @@
                     android:orientation="horizontal"
                     android:weightSum="2"
                     android:layout_height="wrap_content">
-                    <TextView
+                    <Button
                             android:layout_width="0dp"
                             android:text="Forgot Password"
                             android:gravity="right"
@@ -84,7 +84,7 @@
                     <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"/>
-                    <TextView
+                    <Button
                             android:layout_width="0dp"
                             android:layout_marginLeft="32dp"
                             android:layout_marginTop="20dp"
