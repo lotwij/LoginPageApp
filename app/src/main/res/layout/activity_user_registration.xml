@@ -38,9 +38,9 @@
                 android:layout_height="wrap_content"/>
 
         <EditText
-                android:id="@+id/FirstNameRegister"
+                android:id="@+id/etvName"
                 android:layout_width="match_parent"
-                android:hint="First Name"
+                android:hint="Full Name"
                 android:fontFamily="@font/quesha"
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
@@ -50,9 +50,10 @@
                 android:layout_height="32dp"/>
 
         <EditText
-                android:id="@+id/LastNameRegister"
+                android:id="@+id/etvAge"
+                android:inputType="number"
                 android:layout_width="match_parent"
-                android:hint="Last Name"
+                android:hint="Age"
                 android:fontFamily="@font/quesha"
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
@@ -62,7 +63,7 @@
                 android:layout_height="32dp"/>
 
         <EditText
-                android:id="@+id/GenderRegister"
+                android:id="@+id/GenderRegister_txt"
                 android:layout_width="match_parent"
                 android:hint="Gender"
                 android:fontFamily="@font/quesha"
@@ -75,7 +76,7 @@
 
 
         <EditText
-                android:id="@+id/EmailRegister"
+                android:id="@+id/etvEmail"
                 android:layout_width="match_parent"
                 android:hint="Email"
                 android:fontFamily="@font/quesha"
@@ -87,7 +88,7 @@
                 android:layout_height="32dp"/>
 
         <EditText
-                android:id="@+id/EmailAgainRegister"
+                android:id="@+id/EmailAgainRegister_txt"
                 android:layout_width="match_parent"
                 android:hint="Re enter Email"
                 android:fontFamily="@font/quesha"
@@ -100,7 +101,7 @@
 
 
         <EditText
-                android:id="@+id/PasswordRegister"
+                android:id="@+id/PasswordRegister_txt"
                 android:layout_width="match_parent"
                 android:hint="Password"
                 android:fontFamily="@font/quesha"
@@ -112,7 +113,7 @@
                 android:layout_height="32dp"/>
 
         <Button
-                android:id="@+id/Register_btn"
+                android:id="@+id/btn_insert"
                 android:layout_width="match_parent"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
