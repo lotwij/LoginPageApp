@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.3"
+            android:src="@drawable/spice"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Welcome"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="88dp"
+                    android:fontFamily="@font/quesha"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:text="Welcome and thank you so much for getting 'Meal Prep Recipes!'. Please login or register so we can show you all the great recipes!"
+                    android:layout_height="wrap_content"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Username"
+                    android:fontFamily="@font/quesha"
+                    android:layout_marginTop="30dp"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_border"
+                    android:layout_height="40dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:hint="Password"
+                    android:fontFamily="@font/quesha"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_border"
+                    android:layout_height="40dp"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quesha"
+                    android:textAllCaps="false"
+                    android:textSize="25dp"
+                    android:text="Login"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_button"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="0dp"
+                            android:text="Forgot Password"
+                            android:gravity="right"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"/>
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Register"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
