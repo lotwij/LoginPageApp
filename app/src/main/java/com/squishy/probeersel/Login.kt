@@ -11,5 +11,14 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        GoToForgotPassword_btn.setOnClickListener {
+            val intent = Intent(this,ForgotPassword::class.java)
+            startActivity(intent)
+        }
+        GoToRegister_btn.setOnClickListener {
+            val intent = Intent(this,UserRegistration::class.java)
+            startActivity(intent)
+        }
+
     }
 }
