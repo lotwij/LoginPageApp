@@ -16,10 +16,10 @@ class UserRegistration : AppCompatActivity() {
         btn_insert.setOnClickListener {
             if (etvName.text.toString().length>0 &&
                     etvAge.text.toString().length > 0
-///                && etvEmail.text.toString().length > 0
+                && etvEmail.text.toString().length > 0
             ){
-                var user = User(etvName.text.toString(), etvAge.text.toString().toInt())
-     ///               ,etvEmail.text.toString())
+                var user = User(etvName.text.toString(), etvAge.text.toString().toInt()
+                    ,etvEmail.text.toString())
                 var db = DataBaseHandler(context)
                 db.insertData(user)
             }else{

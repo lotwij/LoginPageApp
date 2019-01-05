@@ -8,7 +8,7 @@ import android.widget.Toast
 
 val DATABASE_NAME = "MyDB"
 val TABLE_NAME = "Users"
-///val COL_EMAIL = "email"
+val COL_EMAIL = "email"
 val COL_NAME = "name"
 val COL_AGE = "age"
 val COL_ID = "id"
@@ -17,8 +17,8 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE
     override fun onCreate(db: SQLiteDatabase?) {
         val createTable = "CREATE TABLE " + TABLE_NAME +  " (" +
                 COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-///                COL_EMAIL + " VARCHAR(255)," +
-                COL_NAME + " VARCHAR(256)," +
+                COL_EMAIL + " VARCHAR(255)," +
+                COL_NAME + " VARCHAR(250)," +
                 COL_AGE + " INTEGER)";
 
         db?.execSQL(createTable)
@@ -32,7 +32,7 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE
     fun insertData(user: User){
         val db = this.writableDatabase
         var cv = ContentValues()
-///        cv.put(COL_EMAIL,user.email)
+        cv.put(COL_EMAIL,user.email)
         cv.put(COL_NAME,user.name)
         cv.put(COL_AGE, user.age)
         val result = db.insert(TABLE_NAME,null,cv)
